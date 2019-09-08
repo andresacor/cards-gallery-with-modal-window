@@ -1,0 +1,144 @@
+body {
+    /* background-image: url('../img/background-image2.jpg'); */
+    background-color: #aaa;
+    background-size:cover;
+    background-attachment: fixed; 
+  
+}
+
+/* card */
+.contenedor {
+    width: 45%;
+    max-width: 300px;
+    border: 1px solid #f2f2f2;
+    margin: 20px auto;
+    background: #fff;
+    transition: 1s;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.contenedor:hover {
+    box-shadow:0 0 40px rgb(134, 123, 123);
+    background-color: rgb(248, 242, 242);   
+}
+
+.titulo-articulo {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(51, 46, 46);
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagen-articulo {
+    width: 300px;
+    height: 200px;
+    background-color: #aaa;
+    display: block;
+    margin: auto;
+}
+
+.info-articulo {
+    font-family: verdana;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+
+ .leer-mas {
+     font-family: verdana;
+     font-size: 12px;
+     text-decoration: none;
+     background-color: rgb(158, 149, 149);
+     border-radius:25px;
+     padding: 10px 0;
+     text-align: center;
+     width: 90%;
+     color: #fff;
+     margin: auto;
+     display: block;
+ }
+
+ .leer-mas:hover {
+    background-color: rgb(164, 231, 6);
+    color: #000;
+ }
+
+span {
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(164, 231, 6);
+}
+
+i {
+    margin: 20px;
+    color: rgb(158, 149, 149);
+    display: block;
+}
+
+.category {
+   display: flex; 
+   align-items: center;
+   justify-content: space-around;
+}
+
+.icons {
+    text-align: center;
+}
+
+.fab:hover {
+    color: rgb(164, 231, 6);
+}
+
+/* /card */
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  /*   overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+/* BREAKPOINTS */
+@media (min-width:768px) {
+    .contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .contenedor {
+       margin: 5px;
+    }
+
+    .icons {
+        display: block;
+        float: right;
+    }
+
+        
+    .leer-mas {
+        width: 150px;
+        margin-left: 5px;
+        display: inline-block;
+    } 
+
+    i {
+        margin: 10px;
+    }
+   
+
+
+    
+    
+}
+
